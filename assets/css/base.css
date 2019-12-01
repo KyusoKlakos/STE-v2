@@ -1,0 +1,17 @@
+#base {
+    background: lightcoral;
+    height: 100vh;
+    width: 100vw;
+}
+
+.second {
+    background: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.third {
+    background: red;
+    height: 100vh;
+    width: 100vw;
+}

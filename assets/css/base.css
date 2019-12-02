@@ -1,7 +1,13 @@
-#base {
-    background: lightcoral;
+#presentation {
     height: 100vh;
     width: 100vw;
+    background: url('../imgs/pres.png') no-repeat center    ;
+    -webkit-background-size: cover;
+    background-size: cover;
+    opacity:0.8;
+    z-index: 0;
+    text-align: center;
+    color: white;
 }
 
 .second {
@@ -14,4 +20,8 @@
     background: red;
     height: 100vh;
     width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
 }

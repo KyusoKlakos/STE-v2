@@ -1,12 +1,41 @@
 #img-presentation{
     width: 110px;
-    margin-top: 60px;
 }
 
 #presentation h1{
     font-size: 4em;
     border: solid white 3px;
     width: 39%;
-    padding: 10px;
-    margin-left: 30%;
+}
+
+
+@media (min-device-width : 320px) and (max-device-width : 1373px) {
+    #presentation h1{
+        font-size: 7em;
+        border: solid white 3px;
+        width: 50%;
+        margin-top: 25%;
+        margin-bottom:  10%;
+    }
+    
+    #img-presentation{
+        width: 250px;
+    }
+
+    #presentation p{
+        font-size: 2em;
+    }
+}
+
+@media (orientation: landscape){
+    #presentation h1{
+        font-size: 4.5em;
+        border: solid white 3px;
+        width: 43%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #img-presentation{
+        width: 110px;
+    }   
 }

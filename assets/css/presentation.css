@@ -35,7 +35,7 @@
 
 
 
-@media (min-device-width : 320px) and (max-device-width : 1373px) {
+@media screen and (max-device-width : 1373px) {
     #presentation #pres-text h1{
         font-size: 7em;
         border: solid white 3px;

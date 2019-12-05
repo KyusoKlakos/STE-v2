@@ -17,6 +17,14 @@
   margin-bottom: 60px;
 }
 
+@media screen and (max-device-width : 1373px) {
+  #association p{
+    font-size: 1.3rem;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
 @media screen and (max-device-width: 1366px) and (orientation: landscape){
   #association p{
     font-size: 1rem;

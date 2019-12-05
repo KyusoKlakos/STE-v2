@@ -32,26 +32,3 @@
     margin-right: 70px;
   }
 }
-
-.equipes .mySlides h1{
-  margin-top: 20px;
-  font-size: 5em;
-  margin-bottom: 60px;
-}
-
-.mySlides {
-  display:none;
-  width: 100%;
-  min-height: 100%;
-}
-
-.btn{
-  display: flex;
-  align-items: center;
-  min-height: 100%;
-  justify-content: space-between;
-}
-
-.btn-right{
-  margin-right: 15px;
-}

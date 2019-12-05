@@ -1,5 +1,6 @@
 #img-presentation{
     width: 110px;
+    margin-bottom: 60px;
 }
 
 
@@ -27,8 +28,8 @@
     font-size: 4em;
     border: solid white 2px;
     width: 37%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
 }
 
 
@@ -45,6 +46,7 @@
     
     #img-presentation{
         width: 250px;
+        margin-bottom: initial;
     }
 
     #presentation #pres-text p{
@@ -52,19 +54,19 @@
     }
 }
 
-@media screen and (min-device-width: 480px) and (max-device-width: 1366px) and (orientation: landscape){
+@media screen and (max-device-width: 1366px) and (orientation: landscape){
     #presentation #pres-text h1{
         font-size: 2em;
         border: solid white 3px;
-        width: 43%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        width: 43% !important;
+        margin-top: 5% !important;
+        margin-bottom: 5% !important;
     }
     #img-presentation{
-        width: 110px;
+        width: 110px !important;
     }
     
     #presentation #pres-text p{
-        font-size: 1em;
+        font-size: 1em !important;
     }
 }

@@ -2,84 +2,124 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link href="assets/css/loading_effect.css" rel="stylesheet">
-    <link href="assets/css/menu.css" rel="stylesheet">
-    <link href="assets/css/base.css" rel="stylesheet">
-    <link href="assets/css/presentation.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Salade Tomate Esport</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link href="assets/css/loading_effect.css" rel="stylesheet">
+  <link href="assets/css/menu.css" rel="stylesheet">
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/presentation.css" rel="stylesheet">
+  <link href="assets/css/association.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+  <title>Salade Tomate Esport</title>
 </head>
 
 <body>
-    <!--Navigation smartphone-->
-    <div class="content-nav-mobile sticky-mobile" id="nav-mobile">
-        <button id="burger" class="open-mobile-nav">
-            <span class="burger"></span>
-            <span class="burger-text">Menu</span>
-        </button>
-        <nav class="mobile-nav" id="mobile-nav">
-            <ul>
-                <li>
-                    <a href="#">L'association</a>
-                </li>
-                <li>
-                    <a href="#">Equipes</a>
-                </li>
-                <li>
-                    <a href="#">Événement</a>
-                </li>
-                <li>
-                    <a href="#">Soutiens</a>
-                </li>
-                <li>
-                    <div class="network-mobile">
-                        <a target="_blank" href="https://twitter.com/STEsport_"><img width="80px" src="assets/imgs/networks/twitter.svg"></a>
-                        <a target="_blank" href="https://discord.gg/qVczDFb"><img width="80px" src="assets/imgs/networks/discord.svg"></a>
-                        <a target="_blank" href="https://polarisseries.fr/"><img width="80px" src="assets/imgs/networks/ps.svg"></a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Accueil avec accroche + logo + nom -->
-    <section id="presentation">
-        <img id="img-presentation" src="assets/favicon.png">
-        <h1>SALADE TOMATE ESPORT</h1>
-        <p>Association loi 1901 comprenant des équipes sur Overwatch et League of Legends</p>
-    </section>
-
-    <!--Navigation pc-->
-    <nav class="nav-pc" id="nav-pc">
-        <ul>
-            <li class="nav-pc-left"><img class="img-ste" src="assets/favicon.png"></li>
-            <li class="main-nav">
-                <ul>
-                    <li><a>L'association</a></li>
-                    <li><a>Equipes</a></li>
-                    <li><a>Événements</a></li>
-                    <li><a>Soutien</a></li>
-                </ul>
-            </li>
-            <li class="nav-pc-right">
-                <ul>
-                    <li><a target="_blank" href="https://twitter.com/STEsport_"><img src="assets/imgs/networks/twitter.svg"></a></li>
-                    <li><a target="_blank" href="https://discord.gg/qVczDFb"><img src="assets/imgs/networks/discord.svg"></a></li>
-                    <li><a target="_blank" href="https://polarisseries.fr/"><img width="24px" src="assets/imgs/networks/ps.svg"></a></li>
-                </ul>
-            </li>
-        </ul>
+  <!--Navigation smartphone-->
+  <div class="content-nav-mobile sticky-mobile" id="nav-mobile">
+    <button id="burger" class="open-mobile-nav">
+      <span class="burger"></span>
+      <span class="burger-text">Menu</span>
+    </button>
+    <nav class="mobile-nav" id="mobile-nav">
+      <ul>
+        <li>
+          <a href="#">L'association</a>
+        </li>
+        <li>
+          <a href="#">Les équipes</a>
+        </li>
+        <li>
+          <a href="#">Les événement</a>
+        </li>
+        <li>
+          <a href="#">Nous soutenir</a>
+        </li>
+        <li>
+          <div class="network-mobile">
+            <a target="_blank" href="https://twitter.com/STEsport_"><img width="80px"
+                src="assets/imgs/networks/twitter.svg"></a>
+            <a target="_blank" href="https://discord.gg/qVczDFb"><img width="80px"
+                src="assets/imgs/networks/discord.svg"></a>
+            <a target="_blank" href="https://polarisseries.fr/"><img width="80px" src="assets/imgs/networks/ps.svg"></a>
+          </div>
+        </li>
+      </ul>
     </nav>
-
-    <div class="second">
-
+  </div>
+  <!-- Accueil avec accroche + logo + nom -->
+  <div id="presentation">
+    <div id="pres-text">
+      <img id="img-presentation" src="assets/favicon.png">
+      <h1>SALADE TOMATE ESPORT</h1>
+      <p>Association loi 1901 comprenant des équipes sur Overwatch et League of Legends</p>
     </div>
-    <div class="third">
+    <div id="pres-transition"></div>
+  </div>
 
+  <!--Navigation pc-->
+  <nav class="nav-pc" id="nav-pc">
+    <ul>
+      <li class="nav-pc-left"><img class="img-ste" src="assets/favicon.png"></li>
+      <li class="main-nav">
+        <ul>
+          <li><a>L'association</a></li>
+          <li><a>Les équipes</a></li>
+          <li><a>Les événements</a></li>
+          <li><a>Nous soutenir</a></li>
+        </ul>
+      </li>
+      <li class="nav-pc-right">
+        <ul>
+          <li><a target="_blank" href="https://twitter.com/STEsport_"><img src="assets/imgs/networks/twitter.svg"></a>
+          </li>
+          <li><a target="_blank" href="https://discord.gg/qVczDFb"><img src="assets/imgs/networks/discord.svg"></a></li>
+          <li><a target="_blank" href="https://polarisseries.fr/"><img width="24px"
+                src="assets/imgs/networks/ps.svg"></a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="association">
+    <h1>Qui sommes nous ?</h1>
+    <p>A l'initiative de huit membres fondateurs provenant d'une ancienne association, Salade Tomate Esport voit
+      le jour en juin 2019. Notre ambition était simple : réunir des passionnés de jeux vidéos axé
+      prioritairement sur Overwatch et LoL. Nous souhaitions proposer à notre communauté de vivre une aventure
+      exceptionnelle tous ensemble et surtout, proposer une réelle place où se retrouver. Plus que des
+      "collègues de jeu", nous sommes avant tout une grande famille qui cherche à construire des projets
+      ensemble, progresser dans le domaine de l'e-sport et passer de bons moments.</p>
+    <p>Aujourd'hui, STE est devenue une association loi 1901 et comprends cinq équipes Overwatch et deux équipes
+      LoL. Nous essayons de proposer un maximum d'activités à nos joueurs et nos membres, et d'apporter un
+      staff de qualité au sein de notre structure. STE possède dorénavant des objectifs clairs : réunir des
+      passionnés de la France entière, les mettre en relation, les soutenir et les aider à progresser. Chacun
+      de nos rosters et ses membres possèdent une place à part entière dans notre structure telle une famille.
+      Notre communauté se veut inclusive, mixte, et égale entre ses membres.</p>
+    <p>Pour finir, et pas des moindres, nous sommes très fiers d'être les organisateurs et les gérants de
+      Polaris Series. Championnat Overwatch sur PC où les équipes sont classées par division, avec une
+      multitudes de casteurs et de monteurs vidéos, la première saison de Polaris Series s'annonce comme un
+      véritable succès avec pas moins de 49 équipes inscrites.</p>
+  </div>
+
+
+
+  <div class="equipes">
+    <div class="mySlides">
+      <div class="btn">
+        <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
     </div>
+    <div class="mySlides">
+      <div class="btn">
+        <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="assets/js/nav.js"></script>
+<script src="assets/js/sliderEquipes.js"></script>
 
 </html>

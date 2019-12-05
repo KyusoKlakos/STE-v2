@@ -2,15 +2,40 @@
     width: 110px;
 }
 
-#presentation h1{
+
+#presentation #pres-text{
+    width: 100vw;
+    height: 96vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../imgs/hatched2.jpg');
+    background-size: contain; 
+}
+
+#presentation #pres-transition {
+    width: 100vw;
+    height: 4vh;
+    background: url('../imgs/hatched3.png') no-repeat;
+    background-size: contain; 
+}
+
+#presentation #pres-text h1{
     font-size: 4em;
-    border: solid white 3px;
-    width: 39%;
+    border: solid white 2px;
+    width: 37%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 
+
+
 @media (min-device-width : 320px) and (max-device-width : 1373px) {
-    #presentation h1{
+    #presentation #pres-text h1{
         font-size: 7em;
         border: solid white 3px;
         width: 50%;
@@ -22,13 +47,13 @@
         width: 250px;
     }
 
-    #presentation p{
+    #presentation #pres-text p{
         font-size: 2em;
     }
 }
 
-@media (orientation: landscape){
-    #presentation h1{
+@media screen and (min-device-width: 480px) and (max-device-width: 1366px) and (orientation: landscape){
+    #presentation #pres-text h1{
         font-size: 2em;
         border: solid white 3px;
         width: 43%;
@@ -39,7 +64,7 @@
         width: 110px;
     }
     
-    #presentation p{
+    #presentation #pres-text p{
         font-size: 1em;
     }
 }

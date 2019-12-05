@@ -1,0 +1,29 @@
+#association h1{
+    font-size: 5em;
+}
+
+.mySlides {
+  display:none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mySlides:first-child{
+  background: rebeccapurple;
+}
+
+/*.btn-left{
+  float: left;
+  margin-left: 3px;
+}
+
+.btn-right{
+  float: right;
+  margin-right: 20px;
+}*/
+
+.btn{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}

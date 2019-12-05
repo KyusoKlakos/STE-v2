@@ -2,6 +2,10 @@
     display: none;
 }
 
+.nav-pc{
+    z-index: 100;
+}
+
 .nav-pc ul {
     display: flex;
     justify-content: space-between;

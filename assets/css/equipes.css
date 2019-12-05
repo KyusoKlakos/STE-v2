@@ -4,7 +4,23 @@
     margin-bottom: 60px;
     text-align: center;
   }
-  
+
+  .info-teams{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .info-teams img{
+    width: 150px;
+    margin-left: 100px;
+  }
+
+  .info-teams p{
+    margin-left: 60px;
+    margin-right: 150px;
+  }
+
   .mySlides {
     display:none;
     width: 100%;
@@ -12,6 +28,11 @@
   }
   
   .btn{
+    width: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     min-height: 100%;
@@ -40,8 +61,6 @@
 
 
 .sauce-card-group {
-    background-color: 
-    #fff;
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
@@ -83,7 +102,7 @@
     background-size: contain;
     width: 164px;
     height: 164px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 [data-aos^="zoom"][data-aos^="zoom"].aos-animate {
@@ -91,10 +110,25 @@
     transform: translateZ(0) scale(1);
 }
 
+[data-aos-easing="ease"] [data-aos] {
+    transition-timing-function: ease;
+}
+
+[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+
+[data-aos^="zoom"][data-aos^="zoom"] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
 .sauce-card-group .sauce-card .sauce-card-image img {
     margin: auto;
-    padding-top: 20px;
-    padding-left: 16px;
+    padding-top: 10px;
+    padding-left: 13px;
+    width: 150px;
+    margin-left: -13px;
 }
 
 .sauce-card-group .sauce-card .sauce-card-icon {

@@ -55,6 +55,18 @@ body{
     margin-bottom: 60px;
 }
 
+#terms{
+    margin-bottom: 60px;
+}
+
+#qcq{
+    margin-bottom: 60px;
+}
+
+#rules{
+    margin-bottom: 60px;
+}
+
 h1{
     font-family: "Aliens and cows",sans-serif;
     font-weight: 500;
@@ -62,7 +74,7 @@ h1{
     font-size: 5rem;
 }
 
-h3{
+h2, h3{
     font-family: "Aliens and cows",sans-serif;
     font-weight: 500;
     line-height: 1.2;

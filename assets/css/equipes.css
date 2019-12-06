@@ -5,6 +5,10 @@
     text-align: center;
   }
 
+  .game-icon{
+    width: 30px;
+  }
+
   .info-teams{
       display: flex;
       align-items: center;
@@ -21,10 +25,8 @@
     margin-right: 150px;
   }
 
-  .mySlides {
-    display:none;
-    width: 100%;
-    min-height: 100%;
+  .mySlides .content h3{
+    margin-top: 25px;
   }
   
   .btn{
@@ -60,7 +62,7 @@
 } 
 
 
-.sauce-card-group {
+.player-card-group {
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
@@ -68,17 +70,17 @@
     justify-content: center;
 }
 
-.sauce-card-group .sauce-card {
+.player-card-group .player-card {
     flex: 0 1 calc(33.333% - 40px);
     max-width: calc(33.333% - 40px);
 }
 
-.sauce-card-group .sauce-card {
+.player-card-group .player-card {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.sauce-card-group .sauce-card {
+.player-card-group .player-card {
     position: relative;
     z-index: 1;
     mix-blend-mode: multiply;
@@ -93,7 +95,7 @@
     margin-top: 20px;
 }
 
-.sauce-card-group .sauce-card .sauce-card-image {
+.player-card-group .player-card .player-card-image {
     margin-left: auto;
     margin-right: auto;
     background-image: url("../imgs/outline.svg");
@@ -123,7 +125,7 @@
     transition-property: opacity,transform;
 }
 
-.sauce-card-group .sauce-card .sauce-card-image img {
+.player-card-group .player-card .player-card-image img {
     margin: auto;
     padding-top: 10px;
     padding-left: 13px;
@@ -131,7 +133,7 @@
     margin-left: -13px;
 }
 
-.sauce-card-group .sauce-card .sauce-card-icon {
+.player-card-group .player-card .player-card-icon {
     margin-left: auto;
     margin-right: auto;
     height: 47px;
@@ -139,12 +141,12 @@
     display: flex;
 }
 
-.sauce-card-group .sauce-card .sauce-card-icon img {
+.player-card-group .player-card .player-card-icon img {
     align-self: flex-end;
     width: 43px;
 }
 
-.sauce-card-group .sauce-card .sauce-card-text {
+.player-card-group .player-card .player-card-text {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -155,7 +157,7 @@
     margin-right: auto;
 }
 
-.sauce-card-group .sauce-card .sauce-card-text h6 {
+.player-card-group .player-card .player-card-text h6 {
     font-weight: bold;
     text-transform: uppercase;
 }

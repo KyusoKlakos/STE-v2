@@ -3,6 +3,12 @@
     src: url("../fonts/aliens_and_cows/aliens\ and\ cows_trial.ttf");
 }
 
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}  
+
 #presentation {
     height: 100vh;
     width: 100vw;
@@ -37,10 +43,23 @@ body{
     line-height: 1.5;
 }
 
+#evenements{
+    margin-bottom: 60px;
+}
+
+#support{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 h1{
     font-family: "Aliens and cows",sans-serif;
     font-weight: 500;
     line-height: 1.2;
+    font-size: 5rem;
 }
 
 h3{
@@ -49,3 +68,24 @@ h3{
     line-height: 1.2;
     font-size: 2.9rem;
 }
+
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.link {
+    transition: background-size .4s ease;
+    background: linear-gradient(to bottom, transparent 62%, #f0c989 0) center center/0% 75% no-repeat;
+    padding: 0 6px 2px 6px;
+    cursor: pointer;
+    letter-spacing: .08rem;
+  }
+  .link:hover {
+    background-size: 100% 100%;
+  }
+  .link:active {
+    background-size: 80% 100%;
+  }
+  

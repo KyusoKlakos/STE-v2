@@ -21,7 +21,8 @@
     width: 100vw;
     height: 4vh;
     background: url('../imgs/hatched3.png') no-repeat;
-    background-size: contain; 
+    background-size: contain;
+    color: white;
 }
 
 #presentation #pres-text h1{

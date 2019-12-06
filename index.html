@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="description"
+    content="Ce site internet vous présente l'association Salade Tomate Esport qui a pour but de promouvoir l'esprot à niveau amateur, grâce à des participations à différents tournois en ligne et en LAN sur les jeux vidéo Overwatch et League Of Legend.">
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -12,6 +14,9 @@
   <link href="assets/css/presentation.css" rel="stylesheet">
   <link href="assets/css/association.css" rel="stylesheet">
   <link href="assets/css/equipes.css" rel="stylesheet">
+  <link href="assets/css/evenements.css" rel="stylesheet">
+  <link href="assets/css/support.css" rel="stylesheet">
+  <link href="assets/css/footer.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
   <title>Salade Tomate Esport</title>
@@ -27,16 +32,16 @@
     <nav class="mobile-nav" id="mobile-nav">
       <ul>
         <li>
-          <a href="#">L'association</a>
+          <a href="#association">L'association</a>
         </li>
         <li>
-          <a href="#">Les équipes</a>
+          <a href="#equipes">Les équipes</a>
         </li>
         <li>
-          <a href="#">Les événement</a>
+          <a href="#evenements">Les événement</a>
         </li>
         <li>
-          <a href="#">Nous soutenir</a>
+          <a href="#support">Nous soutenir</a>
         </li>
         <li>
           <div class="network-mobile">
@@ -59,17 +64,16 @@
     </div>
     <div id="pres-transition"></div>
   </div>
-
   <!--Navigation pc-->
   <nav class="nav-pc" id="nav-pc">
     <ul>
       <li class="nav-pc-left"><img class="img-ste" src="assets/favicon.png"></li>
       <li class="main-nav">
         <ul>
-          <li><a>L'association</a></li>
-          <li><a>Les équipes</a></li>
-          <li><a>Les événements</a></li>
-          <li><a>Nous soutenir</a></li>
+          <li><a href="#association">L'association</a></li>
+          <li><a href="#equipes">Les équipes</a></li>
+          <li><a href="#evenements">Les événements</a></li>
+          <li><a href="#support">Nous soutenir</a></li>
         </ul>
       </li>
       <li class="nav-pc-right">
@@ -83,7 +87,6 @@
       </li>
     </ul>
   </nav>
-
   <div id="association">
     <h1>Qui sommes nous ?</h1>
     <p>A l'initiative de huit membres fondateurs provenant d'une ancienne association, Salade Tomate Esport voit
@@ -99,14 +102,12 @@
       de nos rosters et ses membres possèdent une place à part entière dans notre structure telle une famille.
       Notre communauté se veut inclusive, mixte, et égale entre ses membres.</p>
     <p>Pour finir, et pas des moindres, nous sommes très fiers d'être les organisateurs et les gérants de
-      Polaris Series. Championnat Overwatch sur PC où les équipes sont classées par division, avec une
+      <a class="link" style="text-decoration: none" href="https://www.polarisseries.fr" target="_blank">Polaris
+        Series</a>. Championnat Overwatch sur PC où les équipes sont classées par division, avec une
       multitudes de casteurs et de monteurs vidéos, la première saison de Polaris Series s'annonce comme un
       véritable succès avec pas moins de 49 équipes inscrites.</p>
   </div>
-
-
-
-  <div class="equipes">
+  <div class="equipes" id="equipes">
     <h1>Les Équipes</h1>
 
     <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
@@ -114,10 +115,10 @@
         <a class="nav-link active" id="cd-tab" data-toggle="tab" href="#cd" role="tab" aria-controls="cd"
           aria-selected="true"><img class="game-icon" src="assets/imgs/game_icon/overwatch.svg">Cowboy's depop</a>
       </li>
-      <li class="nav-item">
+      <!--li class="nav-item">
         <a class="nav-link" id="jarvis-tab" data-toggle="tab" href="#jarvis" role="tab" aria-controls="jarvis"
           aria-selected="false"><img class="game-icon" src="assets/imgs/game_icon/overwatch.svg"> Jarivs Inc.</a>
-      </li>
+      </li-->
       <li class="nav-item">
         <a class="nav-link" id="rodent-tab" data-toggle="tab" href="#rodent" role="tab" aria-controls="rodent"
           aria-selected="false"><img class="game-icon" src="assets/imgs/game_icon/overwatch.svg"> Rodent</a>
@@ -128,7 +129,8 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" id="metamancer-tab" data-toggle="tab" href="#metamancer" role="tab"
-          aria-controls="metamancer" aria-selected="false"><img class="game-icon" src="assets/imgs/game_icon/league.svg"> Metamancers</a>
+          aria-controls="metamancer" aria-selected="false"><img class="game-icon"
+            src="assets/imgs/game_icon/league.svg"> Metamancers</a>
       </li>
     </ul>
 
@@ -151,7 +153,7 @@
                 <img src="assets/imgs/icon_ow/tank.PNG" alt="tank">
               </div>
               <div class="player-card-text">
-                <h6>Ultimatum</h6>
+                <h6>Foster</h6>
                 <p>Petit phrase sur le joueur</p>
               </div>
             </div>
@@ -218,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="mySlides tab-pane fade" id="jarvis" role="tabpanel" aria-labelledby="jarvis-tab">
+      <!--div class="mySlides tab-pane fade" id="jarvis" role="tabpanel" aria-labelledby="jarvis-tab">
         <div class="content">
           <h3>Jarvis Inc.</h3>
           <div class="info-teams">
@@ -266,7 +268,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div-->
       <div class="mySlides tab-pane fade" id="rodent" role="tabpanel" aria-labelledby="rodent-tab">
         <div class="content">
           <h3>Rodent</h3>
@@ -357,7 +359,9 @@
           <h3>Wild Cats</h3>
           <div class="info-teams">
             <img src="assets/imgs/logo_teams/wildcats.png">
-            <p>Les vétérans de STE ! Après avoir gagné plusieurs tournois, l'équipe grandmaster n'a plus rien à prouver et sait imposer son style de jeu particulier aux ennemis ! Les Wild Cats possèdent un roster solide et savent comment contrer chaque point faible pour en tirer profit !</p>
+            <p>Les vétérans de STE ! Après avoir gagné plusieurs tournois, l'équipe grandmaster n'a plus rien à prouver
+              et sait imposer son style de jeu particulier aux ennemis ! Les Wild Cats possèdent un roster solide et
+              savent comment contrer chaque point faible pour en tirer profit !</p>
           </div>
           <div class="player-card-group">
             <div class="player-card">
@@ -440,7 +444,9 @@
           <h3>Metamancers</h3>
           <div class="info-teams">
             <img src="assets/imgs/logo_teams/metamancers.png">
-            <p>Grands gagnants de la GA Halloween 2018, les voici, les voilà ! Plus que des joueurs, cette équipe diamant est avant tout une belle bande de potes qui mettent la méta en Y. Comme ils disent si bien "A+ en lan" !</p>
+            <p>Grands gagnants de la GA Halloween 2018, les voici, les voilà ! Plus que des joueurs, cette équipe
+              diamant est avant tout une belle bande de potes qui mettent la méta en Y. Comme ils disent si bien "A+ en
+              lan" !</p>
           </div>
           <div class="player-card-group">
             <div class="player-card">
@@ -507,6 +513,91 @@
         </div>
       </div>
     </div>
+  </div>
+  <div id="evenements">
+    <h1>Les Événemments</h1>
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Polaris Series - Platine</span>
+            <span class="time-wrapper"><span class="time">6 Décembre</span></span>
+          </div>
+          <div class="desc">Demie Finale <br /><a class="link" style="text-decoration: none"
+              href="https://twitter.com/STEsport_" target="_blank">@STEsport_</a> Cowboys Depop vs <a class="link"
+              style="text-decoration: none" href="https://twitter.com/Oversix5" target="_blank">@Oversix5</a> Sucré
+          </div>
+        </div>
+      </li>
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Polaris Series - Master</span>
+            <span class="time-wrapper"><span class="time">15 Décembre</span></span>
+          </div>
+          <div class="desc">
+            Finale<br /><a class="link" style="text-decoration: none" href="https://twitter.com/STEsport_"
+              target="_blank">@STEsport_</a> Wild Cats vs Belu-Gods
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div id="support">
+    <h1>Nous soutenir</h1>
+    <p>Si vous voulez soutenir STE et ses joueurs, n'hésitez pas à faire une donation sur paypal à cette adresse :
+      <b>associationste@gmail.com</b> ! Les donations nous permettent prioritairement de contribuer aux tournois payants
+      de nos joueurs, de participer au financement pour la création de maillots pour nos équipes et d'obtenir des
+      récompenses pour les tournois de la structure.</p>
+    <a class="btn" href="https://www.paypal.com/myaccount/transfer/homepage?from=SUM-QuickLink" target="_blank">Faire un
+      don</a>
+  </div>
+
+  <footer>
+      <div class="container-fluid footer-bg">
+          <div class="footer-content container d-flex flex-column flex-md-row justify-content-between">
+              <div class="nav-footer d-none d-md-flex flex-column">
+                  <a class="link" style="text-decoration: none; color: white;" href="#our_story">
+                      L'Association
+                  </a>
+                  <a class="link" style="text-decoration: none; color: white;" href="#menu">
+                      Les Équipes
+                  </a>
+                  <a class="link" style="text-decoration: none; color: white;" href="#in_the_press">
+                      LEs Événements
+                  </a>
+                  <a class="link" style="text-decoration: none; color: white;" href="#reviews">
+                      Nous Soutenir
+                  </a>
+                  <a class="link" style="text-decoration: none; color: white;" href="#catering">
+                      Réglement
+                  </a>
+                  <a class="link" style="text-decoration: none; color: white;" href="#locations">
+                      Mentions Légales
+                  </a>
+              </div>
+              <img class="footer-logo" src="assets/favicon.png" alt="falafel inc">
+              <div class="d-flex flex-column social-media">
+                  <div class="d-flex justify-content-start">
+                      <a href="https://facebook.com/falafelinc" target="_blank" rel="noopener">
+                          <img src="assets/imgs/networks/discord.svg" alt="discord">
+                      </a>
+                      <a href="https://twitter.com/falafeldc" target="_blank" rel="noopener">
+                          <img src="assets/imgs/networks/twitter.svg" alt="twitter">
+                      </a>
+                      <a href="https://twitter.com/falafeldc" target="_blank" rel="noopener">
+                        <img src="assets/imgs/networks/ps.svg" alt="polaris">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 
 <script src="assets/js/nav.js"></script>

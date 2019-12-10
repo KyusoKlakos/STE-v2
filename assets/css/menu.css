@@ -129,7 +129,7 @@
 
 
 
-@media screen and (min-device-width : 320px) and (max-device-width : 1460px) {
+@media (min-device-width : 320px) and (max-device-width : 1460px) {
     .nav-pc{
         display: none;
     }
@@ -321,7 +321,7 @@
  }
 }
 
-@media screen and (orientation: landscape) and (max-device-width : 1460px){
+@media (orientation: landscape) and (max-device-width : 1460px){
     .nav-pc{
         display: none;
     }

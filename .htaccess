@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^rules$ pages/rules.html 
